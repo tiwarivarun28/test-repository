@@ -1,3 +1,4 @@
+package array;
 import java.io.*;
 import java.util.ArrayList;
 public class cricket {
