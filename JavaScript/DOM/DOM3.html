@@ -1,0 +1,107 @@
+<!-- Setting Inline Styles on Elements -->
+<!-- <html lang="en">
+  <head>
+    <title>JS Set Inline Styles Demo</title>
+  </head>
+  <body>
+    <p id="intro">This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+  </body>
+</html>
+<script>
+  // Selecting element
+  var elem = document.getElementById("intro");
+  // Appling styles on element
+  elem.style.color = "blue";
+  elem.style.fontSize = "18px";
+  elem.style.fontWeight = "bold";
+</script> -->
+
+<!-- getElementsByClassName(): -->
+<!-- <html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="csk" id="dhoni">I am Dhoni from Chennai</p>
+    <p class="mi">I am Sachin from Mumbai</p>
+    <p class="rcb">I am Kohli from Banglore</p>
+    <p class="mi">I am Rohit from Mumbai</p>
+    <p class="rcb" id="abd">I am ABD from Banglore</p>
+    <p class="csk">I am Raina from Chennai</p>
+  </body>
+</html> -->
+<!-- <script>
+  var chennai = document.getElementsByClassName("csk");
+  console.log(chennai);
+  var banglore = document.getElementsByClassName("rcb");
+  console.log(banglore);
+</script> -->
+
+<!-- <script>
+  console.log(chennai[0]);
+  console.log(chennai[1]);
+</script> -->
+<!-- <script>
+  var chennai = document.getElementsByClassName("csk");
+  for (let i = 0; i < chennai.length; i++) {
+    console.log(chennai[i]);
+  }
+</script> -->
+
+<!-- getElementsByTagName() -->
+<!-- <html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>The Document Object</h1>
+    <h1>The getElementsByTagName() Method</h1>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <p>I am p1</p>
+    <p>I am p2</p>
+    <div>I am box</div>
+  </body>
+</html>
+<script>
+  let h1 = document.getElementsByTagName("h1");
+  console.log(h1) // it should return 2 h1 tags
+  let list = document.getElementsByTagName("li");
+  console.log(list) // it should return 3 li tags
+  let div = document.getElementsByTagName("div")
+  console.log(div)// it should return 1 div tag
+</script> -->
+
+<!-- querySelector(): -->
+<!-- <html>
+  <body>
+    <p>This is a first p element.</p>
+    <p>This is a second p element.</p>
+    <p>This is a third p element.</p>
+  </body>
+</html>
+<script>
+  document.querySelector("p").style.backgroundColor = "red";
+</script> -->
+
+<!-- querySelectorAll(): -->
+<!-- <html>
+  <body>
+    <p>This is a first p element.</p>
+    <p>This is a second p element.</p>
+    <p>This is a third p element.</p>
+  </body>
+</html>
+<script>
+  // This won't work because querySelectorAll() method returns a NodeList.
+  // document.querySelectorAll("p").style.backgroundColor = "red";
+  // So we need to use for loop to select all elements
+  var list = document.querySelectorAll("p");
+  for (var i = 0; i < list.length; i++) {
+    list[i].style.backgroundColor = "red";
+  }
+</script> -->

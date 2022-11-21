@@ -1,0 +1,122 @@
+<!-- <html>
+  <head>
+    <title>OnClick</title>
+  </head>
+  <body>
+    <button onClick="likeMe()">Like👍</button>
+  </body>
+</html> -->
+<!--  onClick Event  -->
+<!-- <element onclick="functionToExecute()">Click</element>  -->
+<!-- <script>
+  function likeMe() {
+    console.log("Someone liked me");
+  }
+</script> -->
+
+<!-- alert() method -->
+<!-- <script>
+  function likeMe() {
+    alert("Someone liked me");
+  }
+</script> -->
+
+<!-- document.getElementById(id_Name) -->
+
+<!-- <html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="para">I am paragraph</p>
+    <div id="box">Welcome to <i> Masai School </i></div>
+    <h1 id="head-1">I am heading 1</h1>
+  </body>
+</html> -->
+<!-- get element  -->
+<!-- <script>
+  console.log(document.getElementById("para"));
+  console.log(document.getElementById("box"));
+  console.log(document.getElementById("head-1"));
+</script> -->
+
+<!-- Inner text vs innerHTML -->
+<!-- <script>
+  console.log(document.getElementById("para").innerText);
+  console.log(document.getElementById("box").innerText);
+  console.log(document.getElementById("box").innerHTML);
+  console.log(document.getElementById("head-1").innerText);
+</script> -->
+
+<!-- Changing InnerText  -->
+<!-- <html>
+<body>
+<h1 id="head">Heading 1</h1>
+</body>
+<script>
+// change the text content in the heading
+document.getElementById("head").textContent = "H1";
+</script>
+</html> -->
+
+<!-- Changing InnerText  -->
+<!-- <!DOCTYPE html>
+<html>
+  <body>
+    <h1>
+      This example demonstrates how we can change text content when clicking on
+      button
+    </h1>
+    <hr />
+    <h1 id="demo">JavaScript</h1>
+    <button onclick="changeText()">Change to Masai</button>
+    <button onclick="changeOriginal()">Change to Javascript</button>
+  </body>
+</html>
+<script>
+  function changeText() {
+    document.getElementById("demo").innerText = "MASAI SCHOOL";
+  }
+
+  function changeOriginal() {
+    document.getElementById("demo").innerText = "JavaScript";
+  }
+</script> -->
+
+<!-- Value: -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="name" type="text" value="" />
+    <button onClick="catchValue()">Submit</button>
+  </body>
+</html>
+<script>
+  function catchValue() {
+    var studentName = document.getElementById("name").value;
+    console.log(studentName);
+  }
+</script> -->
+
+<!-- Displaying Data on browser -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="name" type="text" value="" />
+    <button onClick="catchValue()">Submit</button>
+    <!-- Show output here -->
+    <h1 id="output"></h1>
+  </body>
+</html>
+<script>
+  function catchValue() {
+    var studentName = document.getElementById("name").value;
+    document.getElementById("output").innerText = studentName;
+  }
+</script>
