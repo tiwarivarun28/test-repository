@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Name"/>
+    <input type="text"  id="email" placeholder="Enter Email"/>
+    <button id="submit">Submit</button>
+</body>
+</html>
+
+<script>
+    document.getElementById("submit").addEventListener("click", getdata)
+    function getdata()
+    {
+        var name=document.querySelector("input").value
+        var email=document.getElementById("email").value
+        console.log(name,email)
+    }
+</script>
