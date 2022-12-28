@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <style>
+      .product {
+        display: flex;
+        justify-content: space-around;
+      }
+      img {
+        width: 18%;
+      }
+      button {
+        width: 10%;
+        border-radius: 10px;
+        background-color: teal;
+        color: white;
+        border: none;
+        padding: 10px 0;
+        margin-bottom: 10px;
+      }
+      button > a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button><a href="EcomJS.html">Products Page</a></button>
+    <h1>Cart Page</h1>
+    <div id="cart"></div>
+  </body>
+</html>
+
+<script>
+  var productIncart = JSON.parse(localStorage.getItem("cart")) || [];
+  if (productIncart.length == 0) {
+    document.getElementById("cart").textContent =
+      "Cart is Empty. Add some products to your cart";
+  } else {
+    displayProducts();
+    calculateCartVal()
+  }
+
+  function displayProducts() {
+    productIncart.map(function (elem) {
+      var div = document.createElement("div");
+      div.setAttribute("class", "product");
+      var image = document.createElement("img");
+      image.setAttribute("src", elem.image_url);
+      image.setAttribute("alt", elem.name);
+      var name = document.createElement("h5");
+      name.textContent = elem.name;
+      var price = document.createElement("p");
+      price.textContent = elem.price;
+
+      div.append(image, name, price);
+      document.getElementById("cart").append(div);
+    });
+  }
+
+  function calculateCartVal(){
+    var total=productIncart.reduce(function(acc,currElem){
+       return acc+currElem.price 
+    },0)
+    var cartVal=document.createElement("h5")
+    cartVal.textContent=total
+
+    var p=document.createElement("p")
+    p.textContent="Total"
+
+    var div=document.createElement("div")
+    div.append(p,cartVal)
+    div.style.display="flex"
+    div.style.justifyContent="space-between"
+    document.querySelector("body").append(div)
+
+
+
+  }
+</script>
