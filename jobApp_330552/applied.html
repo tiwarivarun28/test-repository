@@ -14,6 +14,25 @@
       <div><a href="applied.html">Applied Jobs</a></div>
       <div><a href="bookmark.html">Bookmarks</a></div>
     </div>
+    <select name="" id="sortNames" onchange="handleNameSort()">
+      <option value="">Sort by Names</option>
+      <option value="ascending">Ascending</option>
+      <option value="descending">Descending</option>
+    </select>
+
+    <select name="" id="sortSalary" onchange="handleSalarySort()">
+      <option value="">Sort by Salary</option>
+      <option value="htl">High to Low</option>
+      <option value="lth">Low to High</option>
+    </select>
+
+    <select name="" id="filterRole" onchange="handleRoleFilter()">
+      <option value="">Filter by Role</option>
+      <option value="all">All</option>
+      <option value="FSD">FSD</option>
+      <option value="Frontend">Frontend</option>
+      <option value="Backend">Backend</option>
+    </select>
 
     <main>
       <table>
@@ -34,42 +53,109 @@
   </body>
   <script>
     //you need to code here
-    var appliedJobs=JSON.parse(localStorage.getItem("jobList"))||[]
+    var appliedJobs = JSON.parse(localStorage.getItem("jobList")) || [];
 
-    displayJobs()
+    displayJobs(appliedJobs);
 
-    function displayJobs(){
-    appliedJobs.map(function(elem){
-      var tr=document.createElement("tr")
-
-      var td1=document.createElement("td")
-      td1.textContent=elem.name
-
-      var td2=document.createElement("td")
-      td2.textContent=elem.email
-
-      var td3=document.createElement("td")
-      td3.textContent=elem.role
-
-      var td4=document.createElement("td")
-      td4.textContent=elem.salary
-
-      var td5=document.createElement("td")
-      td5.textContent="Bookmark"
-      td5.addEventListener("click",function(){
-        addToBookmark(elem)
-      })
-
-      tr.append(td1,td2,td3,td4,td5)
-      document.getElementById("body").append(tr)
-    })
+    function handleSalarySort(){
+      var selected=document.getElementById("sortSalary").value
+      if(selected==="htl")
+      {
+        appliedJobs.sort(function(a,b){
+          return b.salary-a.salary
+        })
+      }
+      else{
+        appliedJobs.sort(function(a,b){
+          return a.salary-b.salary
+        })
+      }
+      displayJobs(appliedJobs);
     }
 
-    var bookmarks=JSON.parse(localStorage.getItem("bookmarks"))||[]
+    function handleNameSort(){
+var selected=document.getElementById("sortNames").value
+if(selected==="ascending"){
+  appliedJobs.sort(function(a,b){
+     if(a.name>b.name){
+      return 1
+     }
+     if(a.name<b.name){
+      return -1
+     }
+     return 0
+  })
+ 
+}
+else{
+  appliedJobs.sort(function(a,b){
+     if(a.name>b.name){
+      return -1
+     }
+     if(a.name<b.name){
+      return 1
+     }
+     return 0
+  })
+ 
+}
+displayJobs(appliedJobs)
+    }
 
-    function addToBookmark(job){
-      bookmarks.push(job)
-      localStorage.setItem("bookmarks",JSON.stringify(bookmarks))
+    function handleRoleFilter() {
+      var selected = document.querySelector("#filterRole").value;
+      var filteredJobs;
+      if (selected == "all") {
+        filteredJobs = appliedJobs;
+      } else {
+        filteredJobs = appliedJobs.filter(function (elem) {
+          return elem.role == selected;
+        });
+      }
+      /* var filteredJobs=appliedJobs.filter(function(elem){
+        if(selected==="all"){
+          return 1
+        }
+        else{
+          return elem.role===selected
+        }
+      })*/
+      displayJobs(filteredJobs);
+    }
+
+    function displayJobs(jobs) {
+      document.getElementById("body").textContent = "";
+      jobs.map(function (elem) {
+        var tr = document.createElement("tr");
+
+        var td1 = document.createElement("td");
+        td1.textContent = elem.name;
+
+        var td2 = document.createElement("td");
+        td2.textContent = elem.email;
+
+        var td3 = document.createElement("td");
+        td3.textContent = elem.role;
+
+        var td4 = document.createElement("td");
+        td4.textContent = elem.salary;
+
+        var td5 = document.createElement("td");
+        td5.textContent = "Bookmark";
+        td5.addEventListener("click", function () {
+          addToBookmark(elem);
+        });
+
+        tr.append(td1, td2, td3, td4, td5);
+        document.getElementById("body").append(tr);
+      });
+    }
+
+    var bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+
+    function addToBookmark(job) {
+      bookmarks.push(job);
+      localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
     }
   </script>
 </html>
