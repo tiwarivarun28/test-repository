@@ -1,0 +1,53 @@
+.EightFacilityMain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.eightLogo {
+  height: 35px;
+  width: 35px;
+}
+
+.eightFacilityFlex {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: rgba(212, 212, 212, 0.2) 0px 2px 8px 0px;
+}
+.eightFacilityFlex:hover {
+  background-color: #e4e2e2;
+  box-shadow: rgba(196, 196, 196, 0.2) px 2px 8px 0px;
+}
+
+.eightLink {
+  text-decoration: none;
+  color: #666;
+  font-size: 19px;
+}
+@media only screen and (max-width: 800px) {
+  .EightFacilityMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .EightFacilityMain {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+  }
+}

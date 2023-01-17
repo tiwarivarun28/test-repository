@@ -1,0 +1,30 @@
+.browsePlansWhite {
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    position: sticky;
+    bottom: 0;
+    /* background-color: transparent; */
+    display: flex;
+    justify-content: center;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 10000000;
+
+}
+.browsePlanRoot {
+    background-color: #5D1241;
+    color: rgb(241, 241, 241);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.browsePlanText {
+    font-weight: bold;
+}
+.browsePlanStarting {
+    font-size: 14px;
+    color: rgb(214, 214, 214);
+}

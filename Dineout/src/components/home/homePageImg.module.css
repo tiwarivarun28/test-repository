@@ -1,0 +1,105 @@
+.homeDineoutImg {
+  background-image: url("https://im1.dineout.co.in/images/uploads/misc/2021/Mar/31/oldherobannerwebfinal_bau.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 450px;
+  height: 400px;
+}
+.center {
+  text-align: center;
+}
+.homeDineoutImgText {
+  margin-top: -270px;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+
+.homeDineoutImgSearchField {
+  display: flex;
+  text-align: center;
+  color: white;
+  width: 90%;
+  height: 60px;
+  margin: auto;
+  outline: none;
+  background-color: white;
+  align-items: center;
+  border-radius: 4px;
+}
+.searchIconColor {
+  color: #ff645a;
+  padding: 10px;
+  background: purple;
+
+  top: 270px;
+  left: 100px;
+}
+
+.inputSearchBtn {
+  margin: 9px;
+  width: 150px;
+  padding: 10px 10px;
+
+  background-color: #ff645a;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.inputSearchBtn:hover {
+  background-color: red;
+}
+.btn {
+  z-index: 10;
+}
+.btn:hover {
+  background-color: red;
+}
+.ccs {
+  width: 81%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 85% 15%;
+  margin-left: 100px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .ccs {
+    width: 98%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin-left: 100px;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ccs {
+    width: 65%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin-left: 100px;
+    border-radius: 5px;
+  }
+  .inputSearchBtn {
+    margin: 9px;
+    width: 50px;
+    padding: 10px 10px;
+
+    background-color: #ff645a;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+  }
+}

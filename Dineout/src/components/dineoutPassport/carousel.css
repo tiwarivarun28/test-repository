@@ -1,0 +1,46 @@
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+	/* background-color: tomato; */
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	z-index: 10;
+	/* background-color: red; */
+}
+.slick-arrow:hover.slick-prev:hover {
+	visibility: visible;
+}
+
+.slick-prev:before {
+	content: "<";
+	background-color: white;
+	color: tomato;
+	font-size: 30px;
+	position: absolute;
+	left: 40px;
+	align-items: center;
+	z-index: 10000;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%; 
+	padding: 5px;
+}
+
+.slick-prev:after {
+	background-color:yellow;
+}
+
+.slick-next:before {
+	content: ">";
+	background-color: white;
+	color: tomato;
+	font-size: 30px;
+	position: absolute;
+	right: 40px;
+	z-index: 10000;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%; 
+	padding: 5px;
+
+}

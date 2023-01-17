@@ -1,0 +1,65 @@
+.memberMain {
+	height: 500px;
+	width: 100%;
+	background-color: #5d1241;
+	margin-top: 20px;
+}
+
+.memberHeading {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	font-size: 23px;
+	padding-top: 30px;
+}
+.memberOffer {
+	color: white;
+	text-align: center;
+}
+
+.bgImg1Mem1,
+.bgImg1Mem2,
+.bgImg1Mem3,
+.bgImg1Mem4,
+.bgImg1Mem5 {
+	margin-top: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: red;
+	height: 320px;
+	width: 95%;
+	border-radius: 20px;
+	margin-left: 5px;
+	box-sizing: border-box;
+}
+.bgImg1Mem1 {
+	background-image: url("https://im1.dineout.co.in/images/uploads/misc/2022/Jan/19/001_cashback.jpg");
+}
+.bgImg1Mem2 {
+	background-image: url("https://im1.dineout.co.in/images/uploads/misc/2022/Jan/19/total-bill.jpg");
+}
+.bgImg1Mem3 {
+	background-image: url("https://im1.dineout.co.in/images/uploads/misc/2022/Jan/19/buffet.jpg");
+}
+
+.bgImg1Mem4 {
+	background-image: url("https://im1.dineout.co.in/images/uploads/misc/2022/Jan/19/hotels123.jpg");
+}
+.bgImg1Mem5 {
+	background-image: url("https://im1.dineout.co.in/images/uploads/misc/2022/Jan/19/experiences_-_without_unit.jpeg");
+}
+
+.cashback {
+	color: white;
+	text-align: center;
+	font-size: 22px;
+	padding-top: 50px;
+	font-weight: bold;
+}
+
+.promocode {
+	color: white;
+	text-align: center;
+	padding: 10px;
+}

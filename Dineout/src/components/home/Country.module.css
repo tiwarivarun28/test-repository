@@ -1,0 +1,46 @@
+.image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.rate {
+  position: absolute;
+  right: 0px;
+  background: #8cbb0f;
+  position: relative;
+  left: 300px;
+  border-radius: 3px;
+}
+.input {
+  border: none;
+}
+.gridd {
+  display: flex;
+  justify-content: space-around;
+}
+.gridd > div {
+  height: 40px;
+  align-items: center;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.widthh {
+  width: 1100px;
+  background: white;
+  border-radius: 3px;
+}
+@media only screen and (max-width: 1300px) {
+  .widthh {
+    width: 600px;
+
+    border-radius: 3px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .widthh {
+    width: 200px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+  }
+}

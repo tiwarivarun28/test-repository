@@ -1,0 +1,66 @@
+.popularHeading {
+	text-align: center;
+	margin-top: 30px;
+	font-weight: bold;
+	color: #333;
+	font-size: 21px;
+	margin-bottom: 25px;
+	letter-spacing: 1px;
+}
+.popularMain {
+    padding-bottom: 30px;
+}
+.bg {
+	position: relative;
+}
+.rating {
+	background-color: #8cbb0f;
+	width: 40px;
+	height: 20px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	padding-top: 1%;
+	margin-right: 10px;
+	box-sizing: border-box;
+	margin-left: 10px;
+	margin-top: 50px;
+	position: absolute;
+}
+
+.name {
+	color: white;
+	position: absolute;
+	margin-top: 75px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.addArea {
+	color: white;
+	position: absolute;
+	margin-top: 110px;
+	margin-left: 10px;
+	color: rgb(236, 236, 236);
+	font-size: 15px;
+}
+.logoDpAndText {
+	display: flex;
+	position: absolute;
+	margin-left: 10px;
+	top: 150px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+}
+.dp {
+	height: 15px;
+	width: 15px;
+}
+
+.dineoutImg {
+	height: 10px;
+	width: 75px;
+	position: absolute;
+	top: 170px;
+	margin-left: 10px;
+}

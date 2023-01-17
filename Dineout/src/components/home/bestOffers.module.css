@@ -1,0 +1,27 @@
+.removeTop {
+
+    margin-top: 140px;
+    background-color: #f3f3f3;
+    width: 100%;
+}
+
+.BestOffersTitle {
+    font-size: 1.4rem;
+    margin-left: 60px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-style: bold;
+}
+.offerCards {
+    margin-left: 30px;
+}
+
+.offerCardImg {
+    height: 273px;
+    width: 210px;
+    margin-left: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 50px;
+    border-radius: 6px;
+}

@@ -1,0 +1,185 @@
+.cartForm {
+  z-index: 10;
+  position: sticky;
+  top: 135px;
+  margin-right: 200px;
+  width: 83%;
+  height: 500px;
+  border-radius: 5px;
+  overflow-x: hidden;
+
+  background: white;
+}
+.formHead {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 700;
+  position: sticky;
+  top: 0px;
+  z-index: 11;
+}
+.calenderContainer {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.imgCal {
+  background-color: #2b98f7;
+  border-radius: 5px 0px 0px 5px;
+  text-align: center;
+  height: 80px;
+  margin-top: 60px;
+}
+
+.imgCal > img {
+  height: 30px;
+}
+.imgCal > div {
+  margin-top: 15px;
+}
+.imgCal > div > span {
+  background-color: #1c466d;
+  color: white;
+  font-weight: 500;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 3px;
+}
+.formFill {
+  margin: 10px;
+}
+
+.mealTimeactive {
+  color: #2b98f7;
+  font-weight: 600;
+  border-bottom: 3px solid #2b98f7;
+}
+.para {
+  position: relative;
+  font-size: 10px;
+  top: 50px;
+  z-index: 10;
+  color: gray;
+  margin-left: 5px;
+}
+.calTitle {
+  margin-top: 20px;
+}
+.para2 {
+  color: gray;
+  font-size: 13px;
+}
+.mealNav {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.mealNav > span {
+  margin: 25px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+.mealNav > span :hover {
+  cursor: pointer;
+}
+.timeList {
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.timeList > div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.timeList > div > div {
+  background: rgb(233, 230, 230);
+  padding: 10px;
+  margin: 5px;
+  font-size: 13px;
+}
+.finalTime {
+  background: #44a0f1;
+  border-radius: 3px;
+  color: white;
+  font-size: 13px;
+  padding: 5px;
+  margin-left: 30px;
+}
+.offer {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.offer > span {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom: 20px;
+}
+.select {
+  position: relative;
+  z-index: 10;
+  top: 43px;
+}
+.inputField {
+  background: rgb(233, 231, 231);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.continueButton {
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  background-color: #fa5757;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+.continueDiv {
+  background: white;
+  padding: 10px;
+  position: sticky;
+  bottom: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(209, 207, 207);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(175, 174, 174);
+}
+
+@media only screen and (max-width: 800px) {
+  .cartForm {
+    z-index: 10;
+    position: sticky;
+    top: 135px;
+    margin-right: 200px;
+    width: 63%;
+    height: 500px;
+    margin-left: 150px;
+    border-radius: 5px;
+    overflow-x: hidden;
+    background: white;
+  }
+}

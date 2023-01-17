@@ -1,0 +1,73 @@
+.image {
+  width: 100%;
+  height: 200px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  /* word-wrap: break-word; */
+}
+
+.inner {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image_rating {
+  position: relative;
+}
+
+.rating_div {
+  position: absolute;
+  background-color: #b3cb43;
+  color: white;
+  padding: 5px;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  border-radius: 5px;
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.inner_details {
+  color: #8e8e8f;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+.address {
+  text-overflow: ellipsis;
+}
+
+.dineout_pay {
+  width: fit-content;
+  padding: 3px 10px;
+  background-color: #fef5f4;
+  color: #f67272;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  font-size: small;
+}
+
+.dineout_pay img {
+  width: 15px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: x-large;
+}

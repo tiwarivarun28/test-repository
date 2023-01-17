@@ -1,0 +1,198 @@
+.payMain {
+	background-color: rgb(247, 247, 247);
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+.payCompMain {
+	width: 40%;
+	margin: auto;
+	height: 500px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 10px;
+	background-color: rgb(247, 247, 247);
+}
+
+.payingFor {
+	background-color: #fff;
+	height: 45px;
+	border-radius: 10px 10px 0px 0px;
+
+	font-weight: bold;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	color: #666666;
+	padding-left: 10px;
+}
+
+.purple {
+	background-color: #5d1241;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	color: white;
+	font-size: 18px;
+}
+
+.dpm {
+	color: rgb(243, 243, 243);
+	font-size: 12px;
+	margin-bottom: 30px;
+	margin-top: 3px;
+}
+
+.dpmImg {
+	height: 20px;
+}
+
+.ruppesMain {
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	font-weight: 600;
+	color: #333;
+	font-size: 18px;
+}
+
+.checkboxMain {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+	align-items: center;
+	font-weight: 600;
+	color: #666;
+}
+
+.checkboxx {
+	margin-right: 10px;
+	background-color: black;
+	color: white;
+}
+.zero {
+	color: #6bb66d;
+}
+
+.arrowAndDisMain {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+	font-size: 15px;
+	color: #666;
+	font-weight: bold;
+}
+
+.disImg {
+	height: 15px;
+	width: 15px;
+}
+.imgAndPromo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.grandRuppesRoot {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+	font-weight: 600;
+	color: #333;
+	padding-top: 20px;
+}
+
+.bgWhite {
+	background: #fff;
+	height: fit-content;
+	padding-bottom: 3px;
+}
+
+.percentDis {
+	height: 15px;
+	width: 15px;
+}
+
+.percentDisAndCasbackMain {
+	display: flex;
+	align-items: center;
+	color: #6bb66d;
+	font-size: 13px;
+	gap: 10px;
+	margin: 20px;
+}
+
+.browsePlansWhite {
+	width: 40%;
+}
+
+.bottomPurpleMain {
+	background-color: #5d1241;
+	width: 90%;
+	margin: 20px 20px;
+	box-sizing: border-box;
+	height: 60px;
+	border-radius: 20px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	color: white;
+	justify-content: center;
+}
+.xExitDiv {
+	text-align: right;
+	align-items: right;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 20px;
+}
+.xExit {
+	background-color: transparent;
+	border: 0;
+	font-size: 40px;
+	color: rgb(190, 189, 189);
+}
+
+.Applycoup {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	padding-bottom: 20px;
+}
+
+.enterPromoCodeDiv {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+::placeholder {
+  color: rgb(219, 212, 212);
+  opacity: 1; /* Firefox */
+}
+.enterPromoCode {
+	border: 0;
+	background-color: transparent;
+	padding: 10px 20px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: #333;
+	outline: none;
+}
+
+.willbeadded {
+	color: #999;
+	font-size: 12px;
+	text-align: center;
+}
+.proceedBtn {
+	background-color: #dcdcdc;
+	color: rgba(0,0,0,.2);
+	border: 0;
+	width: 100%;
+	margin: auto;
+	padding: 10px 20px;
+	margin-top: 10px;
+	border-radius: 10px;
+}

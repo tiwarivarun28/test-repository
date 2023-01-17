@@ -13,7 +13,7 @@ function myTodo() {
 }
 function deleteTask(index) {
   // event.target.parentNode.remove();
-  var removedTodo = todo.splice(index, 1);
+  todo.splice(index, 1);
   localStorage.setItem("todo", JSON.stringify(todo));
   displayTodos();
 }

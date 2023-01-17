@@ -1,0 +1,129 @@
+.cards {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.upperlinks {
+    display: flex;
+    align-items: center;
+    color: silver;
+}
+
+.upperlinks span {
+    display: flex;
+    align-items: center;
+
+}
+
+.pageBtns {
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.activePageSpan {
+    background-color: white;
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 3px;
+    border: 1px solid silver;
+    color: black;
+    cursor: pointer;
+}
+
+.active {
+    border: 1px solid #3594FE;    
+    color: #3594FE;
+}
+
+.prebtn {
+    background-color: transparent;
+    margin-right: 10px;
+    font-size: larger;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+.nextbtn {
+    background-color: transparent;
+    font-size: larger;
+    margin-left: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.topheading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+
+.topheading h2 span {
+    color: silver;
+    font-size: small;
+}
+
+.sort_dropdown_div {
+    text-align: right;
+    color: grey;
+    /* margin-bottom: 10px; */
+}
+
+.sort_dropdown {
+    font-size: large;
+    padding: 8px;
+    border: none;
+    color: grey;
+    border-radius: 5px;
+}
+
+
+.filter_dropdown_div {
+    display: none;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+
+.filter_dropdown {
+    font-size: large;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .filter_dropdown_div {
+        display: inline-block;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

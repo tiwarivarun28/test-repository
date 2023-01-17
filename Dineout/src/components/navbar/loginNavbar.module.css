@@ -1,0 +1,107 @@
+.navbarLoginButton {
+  width: 120px;
+  height: 35px;
+  color: white;
+  font-weight: bold;
+  background-color: #ff645a;
+  border-radius: 5px;
+  border: 0;
+  font-size: 15px;
+}
+
+.navbarLoginButton:hover {
+  background-color: red;
+}
+
+.loginModel {
+  background-color: white;
+  border: 0;
+  outline:none;
+  border-radius: 3;
+  color: white;
+  height: 52vh;
+  width: 30%;
+  margin: 5% auto;
+  padding: 0 30px;
+  border-radius: 6px;
+}
+
+.modelSignInButtonMain {
+  display: flex;
+}
+
+.loginOrSignup {
+  flex-grow: 1;
+  font-size: 23px;
+  padding-top: 37px;
+  font-weight: bold;
+  color: #ff645a;
+}
+
+.closeButton {
+  border: 0;
+  background-color: transparent;
+  font-size: 40px;
+  color: gray;
+  font-weight: 0;
+}
+
+.inputfield {
+  width: 100%;
+  padding-top: 20px;
+  color: black;
+}
+
+.textField {
+  width: 100%;
+  color: black;
+}
+.inputfield:focus {
+  color: black !important;
+}
+
+#handleModelContinueBtn {
+  width: 100%;
+  background-color: #ff645a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+  margin-top: 25px;
+  font-size: 16px;
+}
+.lineTextLine {
+  display: flex;
+  margin-top: 20px;
+}
+.hrlogin {
+  width: 134px;
+}
+.loginvia {
+  color: #333;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 15px;
+}
+
+.btnWithIconMain {
+  display: flex;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+@media only screen and (max-width: 820px) {
+  .navbarLoginButton {
+    width: 80px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    background-color: #ff645a;
+    border-radius: 5px;
+    border: 0;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 380px) {
+}

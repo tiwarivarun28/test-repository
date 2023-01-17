@@ -1,0 +1,140 @@
+.availableInHeading {
+  color: #ff645a;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 80px;
+  padding-left: 60px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.availableOrangeLine {
+  border-bottom: 2px solid red;
+  width: 0.1vh;
+  padding-left: 60px;
+  margin-left: 60px;
+  align-items: left;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.availableLinkMain {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 90%;
+  margin: auto;
+}
+.availableLinkAllPlces {
+  margin-bottom: 13px;
+  font-size: 15px;
+  color: #999999;
+  text-decoration: none;
+}
+.availableLinkAllPlces:hover {
+  color: #666666;
+}
+.datttMain {
+  margin-left: 60px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 90%;
+  margin: auto;
+}
+.availableInHeading2 {
+  color: #ff645a;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 80px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.discoverMain {
+  display: flex;
+  flex-direction: column;
+}
+.availableOrangeLine2 {
+  border-bottom: 2px solid red;
+  width: 0.1vh;
+  padding-left: 60px;
+  align-items: left;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.linkRes {
+  margin-bottom: 13px;
+  color: #999999;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.linkRes:hover {
+  color: #666666;
+}
+
+.footer {
+  margin-top: 90px;
+  align-items: center;
+  text-align: center;
+}
+.footerDineOutImg {
+  height: 40px;
+  width: 100px;
+}
+
+.findResAndOffers {
+  padding-bottom: 10px;
+}
+.findResAndOffersLink {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+}
+
+.contact {
+  color: #666666;
+}
+
+.footerIconsfb {
+  color: #4267b2;
+}
+.footerIconsyt {
+  color: #ff0000;
+}
+
+.footerIconstwit {
+  color: #00acee;
+}
+.footerIconsinsta {
+  color: #8a3ab9;
+}
+
+@media only screen and (max-width: 800px) {
+  .availableLinkMain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+  }
+  .datttMain {
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .availableLinkMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+  }
+  .datttMain {
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+  }
+}
