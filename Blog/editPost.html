@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit a Blog</title>
+    <style>
+      #main {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+      }
+      #title,
+      #author {
+        width: 30%;
+      }
+      #edit-blog-btn {
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+        <a href="index.html">Home Page</a>
+    </h1>
+    <div id="main">
+      <input type="text" id="title" placeholder="Enter Title" />
+      <textarea
+        type="text"
+        id="body"
+        cols="40"
+        rows="7"
+        placeholder="Blog Body"
+      ></textarea>
+      <input type="text" id="author" placeholder="Enter Author Name" />
+      <button id="edit-blog-btn">Edit Blog</button>
+    </div>
+  </body>
+</html>
+
+<script src="editPost.js"></script>

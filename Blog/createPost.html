@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create A new Blog</title>
+    <style>
+        #main{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            
+        }
+        #title,#author{
+            width: 30%;
+        }
+        #create-blog-btn{
+            width: 20%;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <input type="text" id="title" placeholder="Enter Title" />
+      <textarea
+        type="text"
+        id="body"
+        cols="40"
+        rows="7"
+        placeholder="Blog Body"
+      ></textarea>
+      <input type="text" id="author" placeholder="Enter Author Name">
+      <button id="create-blog-btn">Create Blog</button>
+    </div>
+  </body>
+</html>
+
+<script src="createPost.js"></script>
